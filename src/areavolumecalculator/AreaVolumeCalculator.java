@@ -10,15 +10,19 @@ import java.util.Scanner;
 
 public class AreaVolumeCalculator {
 
-    static Scanner Maths = new Scanner(System.in);
-
+    static Scanner input = new Scanner(System.in);
+    static String name = "";
+    
     public static void main(String[] args) {
         // TODO code application logic here 
         
         String choice;
         
+        System.out.println("What is your name?");
+        name = input.next
+        
         System.out.println("Do you want to work out a rectangle or cylinder?");
-        choice = Maths.next();
+        choice = input.next();
         
         if (choice.equals("rectangle")){
             
@@ -45,10 +49,10 @@ public class AreaVolumeCalculator {
         double area;
 
         System.out.println("length");
-        length = Maths.nextDouble();
+        length = input.nextDouble();
         
         System.out.println("width");
-        width = Maths.nextDouble();
+        width = input.nextDouble();
         
         area = length * width;
 
@@ -63,13 +67,13 @@ public class AreaVolumeCalculator {
         double volume;
 
         System.out.println("Width");
-        width = Maths.nextDouble();
+        width = input.nextDouble();
         
         System.out.println("Length");
-        length = Maths.nextDouble();
+        length = input.nextDouble();
         
         System.out.println("Height");
-        height = Maths.nextDouble();
+        height = input.nextDouble();
         
         volume = width * length * height;
 
@@ -84,10 +88,10 @@ public class AreaVolumeCalculator {
         double volume;
         
         System.out.println("height");
-        height = Maths.nextDouble();
+        height = input.nextDouble();
         
         System.out.println("radius");
-        radius = Maths.nextDouble();
+        radius = input.nextDouble();
         
         volume = radius * radius * 3.14 * height;
         System.out.println("The volume of the cylinder is " + volume );
